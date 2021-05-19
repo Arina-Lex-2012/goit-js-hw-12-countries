@@ -1,24 +1,25 @@
 import './sass/main.scss';
-// import menuItemTpl from './templates/menu-item.hbs';
-// import menuItems from './menu.json';
+import countryItemTpl from './templates/country-item.hbs';
 
-fetch('https://restcountries.eu/rest/v2/name/usa')
+const refs = {
+    cardContainer: document.querySelector('.js-card-container'),
+};
+
+fetch('https://restcountries.eu/rest/v2/alpha/col')
 .then(response => {
     return response.json();
+    
 })
 .then(country => {
     console.log(country);
+    const markup = countryItemTpl(country);
+    console.log(markup);
+    refs.cardContainer.innerHTML = markup;
 })
 .catch(error => {
     console.log(error);
 });
- 
-// https://restcountries.eu/rest/v2/name/{name}
-// https://restcountries.eu/rest/v2/name/eesti
-// https://restcountries.eu/rest/v2/name/united
 
-// name
-// capital: "Berlin"
-// population
-// languages
-// flag
+function renderCountryCard(){
+
+};
