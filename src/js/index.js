@@ -7,6 +7,7 @@ const refs = getRefs();
 
 refs.searchInput.addEventListener('input', onInput);
 
+// событие на инпуте
 function onInput(event) {
     event.preventDefault();
     const input = event.currentTarget;
@@ -16,7 +17,7 @@ function onInput(event) {
     API.fetchCountries(searchQuery)
     .then(renderCountryCard)
     .catch(onFetchError)
-    .finally(() => input.value = "");
+    // .finally(() => input.value = "");
 };
 
 
@@ -32,14 +33,12 @@ function onFetchError(error){
     alert('Такой страны нет');    
 };
 
-// fetch('https://restcountries.eu/rest/v2/name/col')
+// fetch('https://restcountries.eu/rest/v2/name/colombia')
 //     .then(r => r.json())
 //     .then(console.log);
 
-// fetch('https://restcountries.eu/rest/v2/name/col?fullText=false')
-//         .then(r => r.json())
-//         .then(console.log);
 
-// fetch('https://pixabay.com/api')
-// .then(r => r.json())
-// .then(console.log);
+// fetch('https://restcountries.eu/rest/v2/name/col?fullText=false')
+//  .then(r => r.json())
+//  .then(console.log);
+
