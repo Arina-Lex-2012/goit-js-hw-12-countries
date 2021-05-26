@@ -10,16 +10,15 @@ refs.searchInput.addEventListener('input', onInput);
 // событие на инпуте
 function onInput(event) {
     event.preventDefault();
-    const input = event.currentTarget;
+    const input = event.target;
     const searchQuery = input.value;
-    // console.log(searchQuery);
 
     API.fetchCountries(searchQuery)
-    .then(renderCountryCard)
+    .then(data => {renderCountryCard(...data)})
     .catch(onFetchError)
     // .finally(() => input.value = "");
 };
-
+ 
 
 // рисование интерфейса 
 function renderCountryCard(country){
@@ -41,4 +40,3 @@ function onFetchError(error){
 // fetch('https://restcountries.eu/rest/v2/name/col?fullText=false')
 //  .then(r => r.json())
 //  .then(console.log);
-

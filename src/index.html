@@ -13,10 +13,15 @@
     <!-- <link rel="stylesheet" href="./sass/_styles.scss" /> -->
   </head>
   <body>
-    <p>Введи название страны в поле ниже</p>    
-    <input type='text' class='js-text-input'></input>
+    <div class="input-container">
+      <p class = "header-text">Let's start your trip, type the country</p>    
+      <input 
+      type="text" 
+      class="js-text-input"
+      placeholder="Search country..."></input>
+    </div>
 
-   <div class='js-card-container'> </div>
+   <div class="card-container js-card-container"> </div>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./js/index.js"></script>
   </body>

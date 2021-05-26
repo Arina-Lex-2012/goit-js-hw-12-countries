@@ -1,7 +1,8 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+.header-text,
+input {
+    font-size: 30px;
+}
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+.card-container{
+    display: flex;
+}
