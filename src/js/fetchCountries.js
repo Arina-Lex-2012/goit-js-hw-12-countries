@@ -1,8 +1,8 @@
 // нахождение страны
 const BASE_URL = 'https://restcountries.eu/rest/v2/name';
 
-function fetchCountries(countryAlpha){
-    return fetch(`${BASE_URL}/${countryAlpha}`)
+function fetchCountries(country){
+    return fetch(`${BASE_URL}/${country}`)
        .then(response => {
             return response.json();
         });

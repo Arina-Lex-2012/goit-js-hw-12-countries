@@ -24,12 +24,13 @@ function onInput(event) {
 function renderCountryCard(country){
     const markup = countryItemTpl(country);
     console.log(markup);
-    refs.cardContainer.innerHTML = markup;  
+    console.log(country.name);
+    refs.cardContainer.innerHTML = markup;
 };
 
 // ошибка
 function onFetchError(error){
-    alert('Такой страны нет');    
+    alert('Make the request more specific');    
 };
 
 // fetch('https://restcountries.eu/rest/v2/name/colombia')

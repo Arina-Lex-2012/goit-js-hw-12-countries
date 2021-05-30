@@ -1,8 +1,39 @@
 .header-text,
-input {
-    font-size: 30px;
+input,
+p,
+li {
+    font-size: 24px;
+}
+
+h2{
+    color: #FF4500;
+    
+}
+
+
+.input-container{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .card-container{
     display: flex;
+    justify-content: center;
 }
+
+.card{
+    display: inline-flex;
+    padding: 20px;    
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card-body{
+    margin-right: 50px;
+}
+
+
+.card-img img{
+    width: 400px;
+    padding-top: 30px;
+}
+
