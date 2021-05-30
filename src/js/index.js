@@ -6,6 +6,7 @@ import getRefs from './get-refs.js';
 const refs = getRefs();
 
 refs.searchInput.addEventListener('input', onInput);
+// refs.searchInput.addEventListener('input', debounce(onInput, 500));
 
 // событие на инпуте
 function onInput(event) {
@@ -23,7 +24,6 @@ function onInput(event) {
 // рисование интерфейса 
 function renderCountryCard(country){
     const markup = countryItemTpl(country);
-    console.log(markup);
     console.log(country.name);
     refs.cardContainer.innerHTML = markup;
 };
