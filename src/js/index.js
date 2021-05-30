@@ -33,11 +33,3 @@ function onFetchError(error){
     alert('Make the request more specific');    
 };
 
-// fetch('https://restcountries.eu/rest/v2/name/colombia')
-//     .then(r => r.json())
-//     .then(console.log);
-
-
-// fetch('https://restcountries.eu/rest/v2/name/col?fullText=false')
-//  .then(r => r.json())
-//  .then(console.log);
