@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/main.scss"],"names":[],"mappings":"AAAA,mBAEI,eAGJ,gBACI","file":"js.e0ec1677.css","sourceRoot":"../src","sourcesContent":[".header-text,\ninput {\n    font-size: 30px;\n}\n\n.card-container{\n    display: flex;\n}"]}
