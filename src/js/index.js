@@ -24,6 +24,7 @@ function onInput(event) {
 // рисование интерфейса 
 function renderCountryCard(country){
     const markup = countryItemTpl(country);
+        
     console.log(country.name);
     refs.cardContainer.innerHTML = markup;
 };
